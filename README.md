@@ -31,13 +31,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .forEach doesn't actually return anything, where as .map does return an array
+
 2. What is the difference between a function and a method?
+
+    methods have a "receiver" while function do not. Ex:  objectOne.methodOne()  objectOne is the reciever and methodOne is the method.
+    a function inside of a function is a method of that function.
 
 3. What is closure?
 
+    A closure gives you access to an outer function’s scope from an inner function.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1. if using the 'new' keyword, 'this' inside the function is a brand new object.
+    2. if apply, call, or bind, are used, 'this' is the object that is passes as the argument.
+    3. if dot notation is used to invoke the function, 'this' is the object left of the dot.
+    4. if a function is invoked as a free function (none of the above conditions) 'this' is the global object.
+        ex: function fn1(){
+            console.log(this); //'this' is the global object
+        }
+
 5. Why do we need super() in an extended class?
+    
+    to inherit the properties and methods of the parent class.
 
 ## Project Set up
 
